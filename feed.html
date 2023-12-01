@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceDog</title>
+    <link rel="stylesheet" href="sytle.css">
+    <script src="https://kit.fontawesome.com/a542d0acb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="feed.html"><img src="res/Logo_FaceDog.png" alt="Logomarca do site. Um cachorro vetorizado em laranja em um fundo azul ou preto."></a>
+            <div class="search-box">
+                <img src="res/search.png">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+        </div>
+
+        <div class="nav-mid">
+            <ul>
+                <li><a href="feed.html" title="Home page"><div class="chosen"><img src="res/casa.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%)"></div></a></li>
+                <li><a href="marketplace.html" title="Marketplace page"><img src="res/market_place.png" alt="" id="market-place-logo"></a></li>
+                <li><a href="#" title="Carrinho"><img src="res/carrinho.png" alt=""></a></li>
+                <li><a href="#" title="Descobrir"><img src="res/bussola.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="accessibility-icon">
+                <a title="Menu de acessibilidade" style="cursor:pointer"><img src="res/image 3.png" alt="Menu de acessibilidade para o usuário." onclick="menuacessibilidade()"></a>
+            </div>
+            <div class="acessibility-menu" id="menu-doido">
+                <div class="acessibility-menu-inner">
+                    <div class="font-size">
+                        <i class="fa-solid fa-minus" onclick="diminuirFonte()" style="color: #ff9d2d; cursor: pointer;"></i>
+                        <p>Tamanho da fonte</p>
+                        <i class="fa-solid fa-plus" onclick="aumentarFonte()" style="color: #ff9d2d; cursor: pointer;"></i>
+                    </div>
+                    <div class="high-contrast">
+                        <p>Modo Noturno</p>
+                        <div id="high-contrast-btn">
+                            <span></span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="nav-user-icon">
+                <img src="res/Ellipse 1.png" alt="" onclick="menuPerfil()">
+            </div>
+            <div class="menu-perfil" id="menu_perfil">
+                <div class="menu-perfil-inner">
+                    <div class="logout" onclick="location.href='index.html'">
+                        <p>Sair</p>
+                        <i class="fa-solid fa-right-from-bracket" style="color: #000000;"></i>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Lang</p>
+                        <img src="res/flag-brazil.png" alt="Bandeira do Brasil." style="width: 30px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="title-imp">
+                <a href="#">Menu</a>
+            </div>
+            <div class="imp-links">
+                <a href="#", style="background-color: #ff9d2d;">Feed </a>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+                <a href="#">Amigos </a>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+                <a href="#">Comunidades </a>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="list-of-posts">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="res/Ellipse 1.png" alt="">
+                        <div>
+                            <p>Alejandro Silva</p>
+                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea name="Input" id="1" rows="3" placeholder="O que deseja compartilhar?"></textarea>
+                    </div>
+                    <div class="post-links">
+                        <a href="#"><i class="fa-solid fa-camera" style="color: #ff9d2d;"></i>Foto</a>
+                        <a href="#"><i class="fa-solid fa-video" style="color: #ff9d2d;"></i>Vídeo</a>
+                        <a href="#"><i class="fa-solid fa-face-smile" style="color: #ff9d2d;"></i>Atividade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-of-posts">
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="res/Ellipse 1.png" alt="">
+                        <div>
+                            <p>Augusto</p>
+                            <span>25 de Agosto de 2023, 13:40</span>
+                        </div>
+                    </div>
+                    <p class="post-text">🐾 Descubra a alegria de ter um companheiro peludo! 🐶❤️ Conheça o incrível mundo dos cães, onde amor incondicional e lealdade são apenas o começo. 🌈✨ Os cães não são apenas animais de estimação, são membros da família que enchem nossos dias de felicidade. 🏡 Compartilhe conosco suas histórias caninas favoritas nos comentários! 📸 #AmoCachorros #MelhorAmigoPeludo #VidaComCães</p>
+                    <div class="post-img">
+                        <img src="res/Rectangle 29.png" alt="Um cachorrinho filhote, possivelmente um labrador, deitado na grama com uma carinha feliz e de sapeca.">
+                    </div>
+                    <div class="post-activity">
+                        <div><img src="res/like.png" alt=""></div>
+                        <div><img src="res/comments.png" alt=""></div>
+                    </div>
+                </div>
+                
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="res/Ellipse 3.png" alt="">
+                        <div>
+                            <p>Carlos</p>
+                            <span>24 de Agosto de 2023, 20:10</span>
+                        </div>
+                    </div>
+                    <p class="post-text">🌟 Você sabia que os cães são especialistas em fazer nosso coração sorrir? 😍🐾 Seja um lambeijo carinhoso ou um olhar cheio de ternura, esses peludos conquistam nossos corações todos os dias. 🐕✨ Compartilhe uma foto do seu fiel amigo de quatro patas e espalhe positividade canina! 📷 #CachorroFeliz #AmoMeuCão #MomentosComCães</p>
+                    <div class="post-img">
+                        <img src="res/Rectangle 30.png" alt="Um cachorro com a cabeça para fora do carro e um sorriso encantador.">
+                        <img src="res/Rectangle 31.png" alt="Um cachorrinho na coleira passeando com o seu dono num parque.">
+                    </div>
+                    <div class="post-activity">
+                        <div><img src="res/like.png" alt=""></div>
+                        <div><img src="res/comments.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="res/Ellipse 2.png" alt="">
+                        <div>
+                            <p>Ana</p>
+                            <span>10 de Setembro de 2023</span>
+                        </div>
+                    </div>
+                    <p class="post-text">😺💕 Explore o fascinante universo dos gatos! 🌙✨ Essas criaturas misteriosas são experts em charme e fofura. 🐾❤️ Conte-nos como seu gatinho deixa sua vida mais colorida nos comentários e compartilhe fotos adoráveis! 📸 #AmoGatos #GatosFofos #VidaComGatos</p>
+                    <div class="post-img">
+                        <img src="res/Rectangle 33.png" alt="Uma imagem de um gato malhado fofo com óculos escuros, com os olhos fechados e uma carinha de sapeca">
+                        <img src="res/Rectangle 34.png" alt="Um gato deitado na grama com a barriga pra cima com a lingua de fora fazendo uma careta engraçada e ao mesmo tempo fofa.">
+                    </div>
+                    <div class="post-activity">
+                        <div><img src="res/like.png" alt=""></div>
+                        <div><img src="res/comments.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-sidebar" id="menu-bate-papo">
+            <div class="title-imp">
+                <a onclick="toggleBatePapo()" style="cursor: pointer;">Bate-Papo</a>
+            </div>
+            <div class="imp-links-bate-papo", id="imp-links-bate-papo">
+                <div class="conversation-list" style="background-color: #ff9d2d;">
+                    <div class="conversation">
+                        <img src="res/Ellipse 2.png" alt="">
+                    </div>
+                    <div class="nome">
+                        <h4>Ana</h4>
+                        <p>Tudo sim!</p>
+                    </div>
+                    
+                </div>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+                <div class="conversation-list">
+                    <div class="conversation">
+                        <img src="res/Ellipse 3.png" alt="">
+                    </div>
+                    <div class="nome">
+                        <h4>Carlos</h4>
+                        <p>Oi, tudo bem? <i class="fa-solid fa-check" style="color: #00ccff;"></i></p>
+                    </div>
+                    
+                </div>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+                <div class="conversation-list">
+                    <div class="conversation">
+                        <img src="res/Ellipse 4.png" alt="">
+                    </div>
+                    <div class="nome">
+                        <h4>Heitor</h4>
+                        <p>Oi, tudo bem?<i class="fa-solid fa-check" style="color: #00ccff;"></i></p>
+                    </div>
+                    
+                </div>
+                <hr style="border-bottom:2px solid black; margin: 10px " />
+                <div class="conversation-list">
+                    <div class="conversation">
+                        <img src="res/Ellipse 5.png" alt="">
+                    </div>
+                    <div class="nome">
+                        <h4>Luiz</h4>
+                        <p>Oi, tudo bem?<i class="fa-solid fa-check" style="color: #00ccff;"></i></p>
+                    </div>
+                    
+                </div>
+                <hr style="border-bottom:2px solid black; " />
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <p>&copy; FaceDog 2023</p>
+            <li>
+                <a href="#">Termos de uso</a>
+            </li>
+            <li>
+                <a href="#">Políticas de privacidade</a>
+            </li>
+        </ul>
+    </div>
+<script src="script.js"></script>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

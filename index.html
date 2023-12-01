@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceDog</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb One' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a542d0acb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="res/Logo_FaceDog.png" alt="Logotipo do site, onde está escrito FaceDog, com fundo azul e letra laranja, a paleta de nossa marca.">
+        </div>
+
+        <div class="nav-right">
+            <div class="accessibility-icon" style="margin-right: 10vw;">
+                <a title="Menu de acessibilidade" style="cursor:pointer"><img src="res/image 3.png" alt="Menu de acessibilidade para o usuário." onclick="menuacessibilidade()" style="width: 50px;"></a>
+            </div>
+            <div class="acessibility-menu" id="menu-doido">
+                <div class="acessibility-menu-inner">
+                    <div class="font-size">
+                        <i class="fa-solid fa-minus" onclick="diminuirFonte()" style="color: #ff9d2d; cursor: pointer;"></i>
+                        <p>Tamanho da fonte</p>
+                        <i class="fa-solid fa-plus" onclick="aumentarFonte()" style="color: #ff9d2d; cursor: pointer;"></i>
+                    </div>
+                    <div class="high-contrast">
+                        <p>Modo Noturno</p>
+                        <div id="high-contrast-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-login">
+        <div class="logo">
+            <p style="font-family: 'Cherry Bomb One';">FaceDog</p>
+        </div>
+        <div class="right-block">
+            <div class="login">
+                <div class="campo">
+                    <p>E-mail</p>
+                    <input id="input-email" type="text" placeholder="email@email.com">
+                </div>
+                <div class="campo">
+                    <p>Senha</p>
+                    <input type="text" placeholder="**************">
+                </div>
+                <div class="campo">
+                    <button onclick="location.href='feed.html'" class="login-button">Login</button>
+                </div>
+                <div class="campo">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+                <div class="campo">
+                    <a href="register.html"><button class="register-button" style="margin-bottom: 10%;">Cadastrar-se</button></a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <p>&copy; FaceDog 2023</p>
+            <li>
+                <a href="#">Termos de uso</a>
+            </li>
+            <li>
+                <a href="#">Políticas de privacidade</a>
+            </li>
+            <li>
+                <a href="#" style="text-decoration: underline;">Português PT-BR</a>
+            </li>
+        </ul>
+    </div>
+<script src="script.js"></script>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
